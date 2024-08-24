@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventions</title>
+    <link rel="stylesheet" type="" href="main.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,102 +16,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html,
-      body {
-        min-height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-        font-family: "Calibri", sans-serif;
-      }
-
-      ul,
-      li,
-      a {
-        list-style-type: none;
-        display: inline;
-      }
-
-      a:hover {
-        text-decoration: underline;
-        opacity: 0.8;
-      }
-
-      HTML CSS 
-
-    Result
-    Skip Results Iframe
-
-EDIT ON
-
-/* Custom player style */
-#section3 midi-player {
-        width: inherit;
-        margin: 4px;
-        margin-bottom: 0;
-      }
-      #section3 midi-player::part(control-panel) {
-        background: #ff5;
-        border: 2px solid #000;
-        border-radius: 10px 10px 0 0;
-      }
-      #section3 midi-player::part(play-button) {
-        color: #353;
-        border: 2px solid currentColor;
-        background-color: #4d4;
-        border-radius: 20px;
-        transition: all 0.2s;
-        content: "hello";
-      }
-      #section3 midi-player::part(play-button):hover {
-        color: #0a0;
-        background-color: #5f5;
-        border-radius: 10px;
-      }
-      #section3 midi-player::part(time) {
-        font-family: monospace;
-      }
-
-      /* Custom visualizer style */
-      #section3 midi-visualizer .piano-roll-visualizer {
-        background: #ffd;
-        border: 2px solid black;
-        border-top: none;
-        border-radius: 0 0 10px 10px;
-        margin: 4px;
-        margin-top: 0;
-        overflow: auto;
-      }
-      #section3 midi-visualizer svg rect.note {
-        opacity: 0.6;
-        stroke-width: 2;
-      }
-      #section3 midi-visualizer svg rect.note[data-instrument="0"] {
-        fill: #e22;
-        stroke: #500;
-      }
-      #section3 midi-visualizer svg rect.note[data-instrument="2"] {
-        fill: #2ee;
-        stroke: #055;
-      }
-      #section3 midi-visualizer svg rect.note[data-is-drum="true"] {
-        fill: #888;
-        stroke: #888;
-      }
-      #section3 midi-visualizer svg rect.note.active {
-        opacity: 0.9;
-        stroke: #000;
-      }
-
-      p {
-        letter-spacing: 2px;
-      }
-    </style>
   </head>
   <body class="w-full h-full flex flex-col justify-center">
     <header class="bg-blue-700 text-white p-4 dark:bg-blue-300 dark:text-black">
