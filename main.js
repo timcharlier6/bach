@@ -1,34 +1,33 @@
 console.log("main.js");
 
 $(document).ready(function () {
-  // DOM Elements
   const $spans = $("p span");
   const $player = $("#midi-player");
 
   let index = 0;
-  let isHighlighting = false; // Flag to track highlighting state
-  let timeoutId; // To store the timeout ID for clearing it
+  let isHighlighting = false;
+  let timeoutId;
 
   $player.on("click", function () {
     if (isHighlighting) {
-      clearTimeout(timeoutId); // Stop the current highlighting
-      isHighlighting = false; // Reset the flag
-      return; // Exit the function if already highlighting
+      clearTimeout(timeoutId);
+      isHighlighting = false;
+      return;
     }
 
     isHighlighting = true;
 
     function highlightSpan() {
       if (index < $spans.length) {
-        $spans.eq(index).css("color", "red"); // Use jQuery to change the color
+        $spans.eq(index).css("color", "red");
         index++;
-        timeoutId = setTimeout(highlightSpan, 1000); // Store timeout ID to clear if needed
+        timeoutId = setTimeout(highlightSpan, 1000);
       } else {
-        isHighlighting = false; // Reset the flag when done
-        index = 0; // Reset index if you want to restart from the beginning next time
+        isHighlighting = false;
+        index = 0;
       }
     }
 
-    setTimeout(highlightSpan, 1); // Start highlighting after 1 second delay
+    highlightSpan();
   });
 });
