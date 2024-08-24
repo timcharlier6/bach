@@ -84,3 +84,7 @@ a:hover {
 p {
   letter-spacing: 2px;
 }
+
+span {
+  transition: color 0.3s ease;
+}
