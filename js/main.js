@@ -21,7 +21,7 @@ $(document).ready(function () {
       if (index < $spans.length) {
         $spans.eq(index).css("color", "red");
         index++;
-        timeoutId = setTimeout(highlightSpan, 1000);
+        timeoutId = setTimeout(highlightSpan, 3000);
       } else {
         isHighlighting = false;
         index = 0;
